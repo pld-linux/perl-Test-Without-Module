@@ -6,6 +6,7 @@
 %define		pnam	Without-Module
 %include	/usr/lib/rpm/macros.perl
 Summary:	Test::Without::Module - Test fallback behaviour in absence of modules
+Summary(pl.UTF-8):	Test::Without::Module - testowanie rozwiązań zapasowych w przypadku braku modułów
 Name:		perl-Test-Without-Module
 Version:	0.18
 Release:	1
@@ -18,21 +19,22 @@ URL:		http://search.cpan.org/dist/Test-Without-Module/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl-Test-Simple
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module allows you to deliberately hide modules from a program
-even though they are installed. This is mostly useful for testing modules
-that have a fallback when a certain dependency module is not installed.
+even though they are installed. This is mostly useful for testing
+modules that have a fallback when a certain dependency module is not
+installed.
 
-None. All magic is done via use Test::Without::Module LIST and
-no Test::Without::Module LIST.
-
-This function returns a reference to a copy of the current hash of forbidden
-modules or an empty hash if none are currently forbidden. This is convenient
-if you are testing and/or debugging this module.
+%description -l pl.UTF-8
+Ten moduł pozwala celowo ukrywać moduły przed programem, nawet jeśli
+są zainstalowane. Jest to przydatne głównie do testowania modułów,
+które mają rozwiązania zapasowe w przypadku, kiedy jakiś wymagany
+moduł nie jest zainstalowany.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
