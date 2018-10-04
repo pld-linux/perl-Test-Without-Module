@@ -8,14 +8,14 @@
 Summary:	Test::Without::Module - Test fallback behaviour in absence of modules
 Summary(pl.UTF-8):	Test::Without::Module - testowanie rozwiązań zapasowych w przypadku braku modułów
 Name:		perl-Test-Without-Module
-Version:	0.18
+Version:	0.20
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	cd19ad26024e89fdfefb0ae0334ee500
-URL:		http://search.cpan.org/dist/Test-Without-Module/
+# Source0-md5:	34684186b66929bbcd12d3ac8ae03f9d
+URL:		https://metacpan.org/release/Test-Without-Module
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
