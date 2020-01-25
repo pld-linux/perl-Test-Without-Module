@@ -4,7 +4,6 @@
 #
 %define		pdir	Test
 %define		pnam	Without-Module
-%include	/usr/lib/rpm/macros.perl
 Summary:	Test::Without::Module - Test fallback behaviour in absence of modules
 Summary(pl.UTF-8):	Test::Without::Module - testowanie rozwiązań zapasowych w przypadku braku modułów
 Name:		perl-Test-Without-Module
